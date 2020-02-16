@@ -15,9 +15,9 @@ const bcrypt = require('bcryptjs'),
 	Joi = require('joi');
 
 // Internal Modules
-const userSchema = require('../models/users/usersModel'),
-	RequestHandler = require('../utils/RequestHandler'),
-	Logger = require('../utils/logger');
+const userSchema = require('../../models/users/usersModel'),
+	RequestHandler = require('../../utils/RequestHandler'),
+	Logger = require('../../utils/logger');
 
 const logger = new Logger();
 const requestHandler = new RequestHandler(logger);

@@ -11,7 +11,7 @@
 
 module.exports = function (app) {
 
-   const authController = require('../../controllers/authCntrl'),
+   const authController = require('../../controllers/auth/authCntrl'),
       auth = require('../../utils/auth');
 
    // create user route
