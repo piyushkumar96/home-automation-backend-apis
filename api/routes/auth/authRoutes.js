@@ -4,7 +4,7 @@
 *   Git:-    https://github.com/piyushkumar96
 *   Folder Link:- https://github.com/piyushkumar96/home-automation-backend-apis
 * 
-*   This file contains users creation, login, updatation routes
+*   This file contains users login, signup, logout routes
  **************************************************************************/
 
 'use strict';

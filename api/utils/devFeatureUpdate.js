@@ -4,7 +4,7 @@
 *   Git:-    https://github.com/piyushkumar96
 *   Folder Link:- https://github.com/piyushkumar96/home-automation-backend-apis
 * 
-*   This file contains functions for updating logs of device
+*   This file contains functions for updating features of device
  **************************************************************************/
 
 // to enable strict mode
@@ -29,7 +29,7 @@ module.exports = {
 	 */
 	async updateDevFeature(userId, devId, feature, value, errorComment) {
 		//let queryString = `{ "devices.$[elem].deviceFeatures.${feature}": "${color}", "devices.$[elem].lastUsed": ${new Date()} }`
-		userSchema.findOneAndUpdate(
+		devLogsSchema.findOneAndUpdate(
 			{
 				"Id": userId
 			},

@@ -4,19 +4,13 @@
 *   Git:-    https://github.com/piyushkumar96
 *   Folder Link:- https://github.com/piyushkumar96/home-automation-backend-apis
 * 
-*   This file contains user Model require for creating user
+*   This file contains deviceLog Model require for storing logs of device
  **************************************************************************/
 
 'use strict';
 
 //External modules
-const mongoose = require('mongoose'),
-    validator = require('validator'),
-    bcrypt = require('bcryptjs'),
-    jwt = require('jsonwebtoken');
-
-//Internal modules
-const config = require('../../../config/config.json');
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 

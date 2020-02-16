@@ -4,7 +4,7 @@
 *   Git:-    https://github.com/piyushkumar96
 *   Folder Link:- https://github.com/piyushkumar96/home-automation-backend-apis
 * 
-*   This file contains user's login, signup, logout main logic
+*   This file contains functions to get, update, delete user profile
  **************************************************************************/
 
 'use strict';
@@ -62,7 +62,7 @@ class UsersController {
 	static async getProfile(req, res) {
 		try {
 			const userProfile = req.user
-			
+
 			return requestHandler.sendSuccess(res, 'User Profile fetched Successfully')({ userProfile });
 		} catch (err) {
 			return requestHandler.sendError(req, res, err);

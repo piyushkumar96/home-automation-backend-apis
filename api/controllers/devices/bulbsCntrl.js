@@ -1,11 +1,11 @@
-/*************************************************************************
+/*************************************************************************************************
 *
 *   Author:- piyushkumar96
 *   Git:-    https://github.com/piyushkumar96
 *   Folder Link:- https://github.com/piyushkumar96/home-automation-backend-apis
 * 
-*   This file contains user's login, signup, logout main logic
- **************************************************************************/
+*   This file contains function to add bulb and its handle features like power, color brightness
+ *************************************************************************************************/
 
 'use strict';
 
