@@ -30,7 +30,7 @@ class AuthController {
 	 * @param {String} email
 	 * @param {String} password
 	 *
-	 * @returns {json}
+	 * @returns {Promise}
 	 */
 	static async login(req, res) {
 
@@ -80,7 +80,7 @@ class AuthController {
 	 * @param {String} email
 	 * @param {String} password
 	 *
-	 * @returns {json}
+	 * @returns {Promise}
 	 */
 	static async signUp(req, res) {
 		try {
@@ -139,7 +139,7 @@ class AuthController {
 	/**
 	 * Logout User's Current Sessions
 	 *
-	 * @returns {String}
+	 * @returns {Promise}
 	 */
 	static async logoutCS(req, res) {
 		try {
@@ -159,7 +159,7 @@ class AuthController {
 	/**
 	 * Logout User's All Sessions
 	 *
-	 * @returns {String}
+	 * @returns {Promise}
 	 */
 	static async logoutAS(req, res) {
 		try {

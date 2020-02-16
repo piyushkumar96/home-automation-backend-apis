@@ -21,7 +21,7 @@ const   express     = require('express'),       // for creating the http server
 //Internal modules
 const   config = require('./config/config.json'),      // contains golbal configuration varibales
         Logger = require('./api/utils/logger'),           // logger confriguration files    
-        //userRoutes = require('./api/routes/users/usersRoute'),
+        userRoutes = require('./api/routes/users/usersRoutes'),
         authRoutes = require('./api/routes/auth/authRoutes');
 
 
@@ -74,7 +74,7 @@ app.all('/*', function (req, res, next) {
     }
 });
 
-//userRoutes(app)
+userRoutes(app)
 authRoutes(app)
 
 // catch 404 and forward to error handler
