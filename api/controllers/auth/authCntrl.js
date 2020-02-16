@@ -102,6 +102,11 @@ class AuthController {
 			}
 
 			data.Id = uuidv4()
+			data.devCounts = {
+				"bulb": 0,
+				"fan": 0,
+				"ac": 0
+			}
 			const user = new userSchema(data)
 
 			await user.save()

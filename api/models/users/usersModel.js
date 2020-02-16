@@ -27,7 +27,10 @@ const userSchema = new Schema({
         trim: true
     },
     Id: {
-        type: String
+        type: String,
+        unique: true,
+        required: true,
+        trim: true
     },
     email: {
         type: String,
@@ -65,6 +68,7 @@ const userSchema = new Schema({
         type: Date
     },
     devices: [],
+    devCounts: {},
     tokens: [{
         token: {
             type: String,

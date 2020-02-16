@@ -22,7 +22,8 @@ const   express     = require('express'),       // for creating the http server
 const   config = require('./config/config.json'),      // contains golbal configuration varibales
         Logger = require('./api/utils/logger'),           // logger confriguration files    
         userRoutes = require('./api/routes/users/usersRoutes'),
-        authRoutes = require('./api/routes/auth/authRoutes');
+        authRoutes = require('./api/routes/auth/authRoutes'),
+        devicesRoutes = require('./api/routes/devices/devicesRoutes');
 
 
 //variables
@@ -51,6 +52,9 @@ app.on('error', function(err){                                  // full event li
 })
 
 mongoose.Promise = global.Promise;
+//mongoose.set('debug', true);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 mongoose.connect(dbconnection, { useNewUrlParser: true});
 let db = mongoose.connection;
 
@@ -76,6 +80,7 @@ app.all('/*', function (req, res, next) {
 
 userRoutes(app)
 authRoutes(app)
+devicesRoutes(app)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

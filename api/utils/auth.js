@@ -65,21 +65,25 @@ function verifyToken(req, res, next) {
 
 		// verifies secret and checks exp
 		jwt.verify(token, config.auth.jwt_secret, async (err, decoded) => {
-			if (err) {
-				requestHandler.throwError(401, 'Unauthorized', 'please provide a vaid token ,your token might be expired')();
-			}
-
 			try {
-				const user = await userSchema.findOne({ _id: decoded._id, 'tokens.token': token })
-				if (!user) {
-					requestHandler.throwError(401, 'Unauthorized', 'please provide a vaid token ,your token might be expired!!. Try by login again')();
+				if (err) {
+					requestHandler.throwError(401, 'Unauthorized', 'please provide a vaid token ,your token might be expired')();
 				}
 
-				req.token = token
-				req.user = user
+				try {
+					const user = await userSchema.findOne({ _id: decoded._id, 'tokens.token': token })
+					if (!user) {
+						requestHandler.throwError(401, 'Unauthorized', 'please provide a vaid token ,your token might be expired!!. Try by login again')();
+					}
 
-				next();
+					req.token = token
+					req.user = user
 
+					next();
+
+				} catch (err) {
+					requestHandler.sendError(req, res, err);
+				}
 			} catch (err) {
 				requestHandler.sendError(req, res, err);
 			}

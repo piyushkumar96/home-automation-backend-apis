@@ -1,0 +1,70 @@
+2020-02-16 10:59:19 error: [Server]:  Connection with MongoDB installed 
+2020-02-16 11:03:20 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: "password" is required
+2020-02-16 11:04:07 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: Cast to string failed for value "{ sendEmail: [Function: sendEmail] }" at path "email" for model "users"
+2020-02-16 11:05:46 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: email is not defined
+2020-02-16 11:07:45 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: secretOrPrivateKey must have a value
+2020-02-16 11:08:59 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: invalid email account,email already existed
+2020-02-16 11:09:38 error: error ,Error during processing request: http://localhost:4000/api/v1/signUp details message: secretOrPrivateKey must have a value
+2020-02-16 11:28:52 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: Cannot read property 'tokens' of undefined
+2020-02-16 11:31:02 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: Cannot read property 'user' of undefined
+2020-02-16 11:31:13 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: Cannot read property 'user' of undefined
+2020-02-16 11:32:06 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: user is not defined
+2020-02-16 11:32:16 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: user is not defined
+2020-02-16 11:33:49 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutCS details message: user is not defined
+2020-02-16 12:35:39 error: error ,Error during processing request: http://localhost:4000/api/v1/logoutAS details message: data is not defined
+2020-02-16 13:32:36 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-16 13:33:23 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-16 13:33:40 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-16 13:34:51 error: error ,Error during processing request: http://localhost:4000/api/v1/user/sdsd details message: invalid User Id
+2020-02-16 13:35:00 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: invalid User Id
+2020-02-16 13:35:11 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: invalid User Id
+2020-02-16 13:36:27 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/sdsd details message: invalid User Id
+2020-02-16 13:39:11 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/sdsd details message: invalid User Id
+2020-02-16 13:39:24 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/04af1c25-1772-477d-82b6-5ab51cc4c78a details message: invalid User Id
+2020-02-16 14:14:31 error: error ,Error during processing request: http://localhost:4000/api/v1/updateUserPassword details message: data is not defined
+2020-02-16 14:15:49 error: error ,Error during processing request: http://localhost:4000/api/v1/login details message: failed to login bad credentials
+2020-02-16 14:18:37 error: error ,Error during processing request: http://localhost:4000/api/v1/updateUserPassword details message: Incorrect Old password!!!
+2020-02-16 14:18:52 error: error ,Error during processing request: http://localhost:4000/api/v1/updateUserPassword details message: Incorrect Old password!!!
+2020-02-16 14:19:07 error: error ,Error during processing request: http://localhost:4000/api/v1/login details message: failed to login bad credentials
+2020-02-16 14:19:50 error: error ,Error during processing request: http://localhost:4000/api/v1/login details message: invalid email address
+2020-02-16 14:22:23 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/copyIdfromdatabase details message: invalid id or user doesn't existed
+2020-02-16 14:23:36 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/copyIdfromdatabase details message: invalid id or user doesn't existed
+2020-02-16 14:24:46 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: invalid id or user doesn't existed
+2020-02-16 14:25:18 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: User doesnot existed
+2020-02-16 14:26:15 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: User doesnot existed
+2020-02-16 14:27:34 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: User doesnot existed
+2020-02-16 14:27:34 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-16 14:27:58 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: User doesnot existed
+2020-02-16 14:28:56 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: User doesnot existed
+2020-02-16 14:32:06 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: user not found!
+2020-02-16 14:32:32 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: user not found!
+2020-02-16 14:33:52 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired!!. Login again
+2020-02-16 14:34:16 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired!!. Try by Login again
+2020-02-16 14:34:29 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:34:39 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/copyIdfromdatabase details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:35:24 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:35:28 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/copyIdfromdatabase details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:35:32 error: error ,Error during processing request: http://localhost:4000/api/v1/deleteUser details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:35:45 error: error ,Error during processing request: http://localhost:4000/api/v1/updateUserProfile details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 14:35:51 error: error ,Error during processing request: http://localhost:4000/api/v1/updateUserPassword details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-16 16:45:59 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: Not Authorized to access this resource!
+2020-02-16 16:46:09 error: error ,Error during processing request: http://localhost:4000/api/v1/login details message: invalid email address
+2020-02-16 16:50:38 error: error ,Error during processing request: http://localhost:4000/api/v1/deleteUser details message: please provide a vaid token ,your token might be expired
+2020-02-16 16:50:51 error: error ,Error during processing request: http://localhost:4000/api/v1/login details message: invalid email address
+2020-02-16 16:51:15 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired
+2020-02-16 16:51:31 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: Not Authorized to access this resource!
+2020-02-16 16:53:38 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: Joi.json is not a function
+2020-02-16 16:53:51 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: devType is not defined
+2020-02-16 16:54:44 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: mongoose is not defined
+2020-02-16 16:58:57 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: The field 'devCounts.bulb' must be an array but is of type int in document {_id: ObjectId('5e4925a27482c137b463ce36')}
+2020-02-16 17:00:09 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: The field 'devCounts.bulb' must be an array but is of type int in document {_id: ObjectId('5e4925a27482c137b463ce36')}
+2020-02-16 17:01:04 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: The field 'devCounts.bulb' must be an array but is of type int in document {_id: ObjectId('5e4925a27482c137b463ce36')}
+2020-02-16 17:01:53 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: The dollar ($) prefixed field '$inc' in 'devCounts.bulb.$inc' is not valid for storage.
+2020-02-16 17:06:21 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: devLogsSchema.insert is not a function
+2020-02-16 17:23:20 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: deLogs is not defined
+2020-02-16 17:29:19 error: error ,Error during processing request: http://localhost:4000/api/v1/addBulb details message: devLogs.findOneAndUpdate is not a function
+2020-02-16 18:14:55 error: error ,Error during processing request: http://localhost:4000/api/v1/user/me details message: please provide a vaid token ,your token might be expired
+2020-02-16 18:54:27 error: error ,Error during processing request: http://localhost:4000/api/v1/getUserById/copyIdfromdatabase details message: invalid id or user doesn't existed
+2020-02-16 19:02:47 error: error ,Error during processing request: http://localhost:4000/api/v1/powerOnOff details message: The array filter for identifier 'elem' was not used in the update { $set: { age: 22 } }
+2020-02-16 19:33:30 error: error ,Error during processing request: http://localhost:4000/api/v1/powerOnOff details message: please provide a vaid token ,your token might be expired
+2020-02-16 22:20:00 error: [Server]:  the url you are trying to reach is not hosted on our server
