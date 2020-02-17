@@ -7,6 +7,7 @@
 *   This file contains function to add bulb and its handle features like power, color brightness
  *************************************************************************************************/
 
+// to enable strict mode
 'use strict';
 
 //External Modules 
@@ -76,7 +77,7 @@ class BulbsController {
 			})
 
 			//Start mongodb transaction session 
-			const session = await mongoose.startSession();
+			var session = await mongoose.startSession();
 			session.startTransaction();
 
 
@@ -99,7 +100,7 @@ class BulbsController {
 
 			const devLogsUpdate = await devLogs.save();
 
-			if (!devAddition) {
+			if (!devLogsUpdate) {
 				requestHandler.throwError(500, " Error in occured while add logs of device!!!!")
 			}
 
@@ -113,64 +114,11 @@ class BulbsController {
 			//Rollback database state changes.
 			await session.abortTransaction();
 			session.endSession();
+
 			return requestHandler.sendError(req, res, error);
 		}
 	}
 
-	/**
-	 * controling power on or off
-	 * @param {String} devId
-	 * @param {String} status
-	 *
-	 * @returns {Promise}
-	 */
-	static async powerOnOff(req, res) {
-		try {
-			const devId = req.body.devId,
-				status = req.body.status,
-				userId = req.user.Id;
-
-			const log = `The bulb is powered ${status} at [${new Date()}].`
-
-			//Start mongodb transaction session 
-			const session = await mongoose.startSession();
-			session.startTransaction();
-
-
-			const power = await userSchema.findOneAndUpdate(
-				{
-					"Id": userId
-				},
-				{
-					$set: {
-						"devices.$[elem].deviceFeatures.status": status,
-						"devices.$[elem].lastUsed": new Date()
-					}
-				},
-				{
-					arrayFilters: [{ "elem.devId": devId }],
-					upsert: false,
-					new: false
-				});
-
-			if (!power) {
-				requestHandler.throwError(500, `Error Powering ${status} bulb with id ${devId}. Please try again!!!`)
-			}
-
-			await devLogsUpdate.updateDevLogs(userId, devId, log)
-
-			//Commit the transaction when all the database operations performed successfully.
-			await session.commitTransaction();
-			session.endSession();
-
-			return requestHandler.sendSuccess(res, `Bulb with id ${devId} is successfully power ${status} @@@`)();
-		} catch (err) {
-			//Rollback database state changes.
-			await session.abortTransaction();
-			session.endSession();
-			return requestHandler.sendError(req, res, err);
-		}
-	}
 
 	/**
 	 * changing color of bulb
@@ -179,7 +127,7 @@ class BulbsController {
 	 *
 	 * @returns {Promise}
 	 */
-	static async changeColor(req, res) {
+	static async changeBulbColor(req, res) {
 		try {
 			const devId = req.body.devId,
 				color = req.body.color,
@@ -223,6 +171,7 @@ class BulbsController {
 			//Rollback database state changes.
 			await session.abortTransaction();
 			session.endSession();
+
 			return requestHandler.sendError(req, res, err);
 		}
 	}
@@ -230,11 +179,11 @@ class BulbsController {
 	/**
 	 * increase or decrease brightness of bulb
 	 * @param {String} devId
-	 * @param {String} state
+	 * @param {String} brightness
 	 *
 	 * @returns {Promise}
 	 */
-	static async setBrightness(req, res) {
+	static async setBulbBrightness(req, res) {
 		try {
 			const devId = req.body.devId,
 				brightness = req.body.brightness,
@@ -278,8 +227,10 @@ class BulbsController {
 			//Rollback database state changes.
 			await session.abortTransaction();
 			session.endSession();
+
 			return requestHandler.sendError(req, res, err);
 		}
 	}
+
 }
 module.exports = BulbsController;

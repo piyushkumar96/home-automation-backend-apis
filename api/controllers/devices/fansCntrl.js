@@ -7,6 +7,7 @@
 *   This file contains function to add bulb and its handle features like power, color brightness
  *************************************************************************************************/
 
+// to enable strict mode
 'use strict';
 
 //External Modules 
@@ -114,62 +115,6 @@ class FansController {
 			session.endSession();
 
 			return requestHandler.sendError(req, res, error);
-		}
-	}
-
-	/**
-	 * controling power on or off
-	 * @param {String} devId
-	 * @param {String} status
-	 *
-	 * @returns {Promise}
-	 */
-	static async powerOnOffFan(req, res) {
-		try {
-			const devId = req.body.devId,
-				status = req.body.status,
-				userId = req.user.Id;
-
-			const log = `The fan is powered ${status} at [${new Date()}].`
-
-			//Start mongodb transaction session 
-			const session = await mongoose.startSession();
-			session.startTransaction();
-
-
-			const power = await userSchema.findOneAndUpdate(
-				{
-					"Id": userId
-				},
-				{
-					$set: {
-						"devices.$[elem].deviceFeatures.status": status,
-						"devices.$[elem].lastUsed": new Date()
-					}
-				},
-				{
-					arrayFilters: [{ "elem.devId": devId }],
-					upsert: false,
-					new: false
-				});
-
-			if (!power) {
-				requestHandler.throwError(500, `Error Powering ${status} fan with id ${devId}. Please try again!!!`)
-			}
-
-			await devLogsUpdate.updateDevLogs(userId, devId, log)
-
-			//Commit the transaction when all the database operations performed successfully.
-			await session.commitTransaction();
-			session.endSession();
-
-			return requestHandler.sendSuccess(res, `fan with id ${devId} is successfully power ${status} @@@`)();
-		} catch (err) {
-			//Rollback database state changes.
-			await session.abortTransaction();
-			session.endSession();
-
-			return requestHandler.sendError(req, res, err);
 		}
 	}
 
