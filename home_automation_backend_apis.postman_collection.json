@@ -1,0 +1,1116 @@
+{
+	"info": {
+		"_postman_id": "47d0fe5b-d26f-40bd-bd13-62ad4e3a787f",
+		"name": "home_automation_backend_apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "18ec8e50-3017-4ab1-bb61-08ff3fd47ea3",
+						"exec": [
+							"if(pm.response.code == 202){",
+							"    var jsonData = JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable(\"authToken\", jsonData.message.token);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Piyush Kumar\",\n    \"email\": \"piyush@gmail.com\",\n    \"password\": \"welcome@123\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/signUp",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"signUp"
+					]
+				},
+				"description": "Sign Up"
+			},
+			"response": []
+		},
+		{
+			"name": "Login Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c8fbe68e-b1e1-4733-8999-72b8c0759b3d",
+						"exec": [
+							"if(pm.response.code == 200){",
+							"    var jsonData = JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable(\"authToken\", jsonData.data.token);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"email\": \"piyush@gmail.com\",\n\t\"password\":\"welcome@123\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/user/me",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"me"
+					]
+				},
+				"description": "Get user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getUserById/copyIdfromdatabaseorgetIdbyusingGetUserRoute",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getUserById",
+						"copyIdfromdatabaseorgetIdbyusingGetUserRoute"
+					]
+				},
+				"description": "Get User by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/deleteUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"deleteUser"
+					]
+				},
+				"description": "Delete User"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout Current Session",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/logoutCS",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"logoutCS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout All Sessions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/logoutAS",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"logoutAS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User's Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n  \"age\": 23\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/updateUserProfile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"updateUserProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User's Password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"oldPassword\":\"welcome@123\",\n\t\"newPassword\":\"welcome@456\",\n\t\"cfmPassword\":\"welcome@456\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/updatePassword",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Bulb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devName\": \"Party bulb\",\n    \"manufacturer\": \"philips\",\n    \"model\": \"led\",\n    \"serialNumber\": \"qwerty456\",\n    \"houseDetails\": {\n        \"roomNum\": 2,\n        \"floor\": 1\n    }\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/addBulb",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addBulb"
+					]
+				},
+				"description": "Add bulb to the network"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Fan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devName\": \"Bajaj Fan\",\n    \"manufacturer\": \"bajaj\",\n    \"model\": \"ceiling\",\n    \"serialNumber\": \"fan12345\",\n    \"houseDetails\": {\n        \"roomNum\": 1,\n        \"floor\": 1\n    }\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/addFan",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addFan"
+					]
+				},
+				"description": "Add Fan to the network"
+			},
+			"response": []
+		},
+		{
+			"name": "Add AC",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devName\": \"Voltas Split AC\",\n    \"manufacturer\": \"voltas\",\n    \"model\": \"split\",\n    \"serialNumber\": \"ac12345\",\n    \"houseDetails\": {\n        \"roomNum\": 1,\n        \"floor\": 1\n    }\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/addAC",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addAC"
+					]
+				},
+				"description": "Add AC to the network"
+			},
+			"response": []
+		},
+		{
+			"name": "Power On/Off Devices",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"AC1\",\n    \"devType\": \"ac\",\n    \"status\": \"on\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/powerOnOff",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"powerOnOff"
+					]
+				},
+				"description": "Power On/Off Devices"
+			},
+			"response": []
+		},
+		{
+			"name": "Change color of bulb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"BULB1\",\n    \"color\": \"blue\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/changeBulbColor",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"changeBulbColor"
+					]
+				},
+				"description": "Change color of bulb"
+			},
+			"response": []
+		},
+		{
+			"name": "Set brightness of bulb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"BULB1\",\n    \"brightness\":20\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/setBulbBrightness",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"setBulbBrightness"
+					]
+				},
+				"description": "Set brightness of bulb"
+			},
+			"response": []
+		},
+		{
+			"name": "Set speed of fan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"FAN1\",\n    \"speed\":20\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/setFanSpeed",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"setFanSpeed"
+					]
+				},
+				"description": "Set speed of fan"
+			},
+			"response": []
+		},
+		{
+			"name": "Set temperature of AC",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"AC1\",\n    \"temp\":30\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/setACTemperature",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"setACTemperature"
+					]
+				},
+				"description": "Set temperature of AC"
+			},
+			"response": []
+		},
+		{
+			"name": "remove the device from the network",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"FAN1\",\n    \"devType\":\"fan\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/removeDevice",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"removeDevice"
+					]
+				},
+				"description": "remove the device from the network"
+			},
+			"response": []
+		},
+		{
+			"name": "adding the device back into the network",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"devId\": \"FAN1\",\n    \"devType\":\"fan\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/addDeviceToNwk",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addDeviceToNwk"
+					]
+				},
+				"description": "adding the device back into the network"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All devices which are in network",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getAllDevicesInNwk",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getAllDevicesInNwk"
+					]
+				},
+				"description": "Get All devices which are in network"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All devices ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getAllDevices",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getAllDevices"
+					]
+				},
+				"description": "Get All devices "
+			},
+			"response": []
+		},
+		{
+			"name": "Get device by Id ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getDeviceById/BULB1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getDeviceById",
+						"BULB1"
+					]
+				},
+				"description": "Get device by Id "
+			},
+			"response": []
+		},
+		{
+			"name": "Get all devices of same device type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getAllDevsSameType/fan",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getAllDevsSameType",
+						"fan"
+					]
+				},
+				"description": "Get all devices of same device type"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all devices of a room",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getAllDevsInRoom/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getAllDevsInRoom",
+						"1"
+					]
+				},
+				"description": "Get all devices of a room"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all devices at a floor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getAllDevsAtFloor/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getAllDevsAtFloor",
+						"1"
+					]
+				},
+				"description": "Get all devices at a floor"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  logs of device",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/getDeviceLogs/BULB1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getDeviceLogs",
+						"BULB1"
+					]
+				},
+				"description": "Get logs of a device"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4dad2901-7b98-41f8-8285-272308af303c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d707293d-9412-4e19-84e6-99f4b74ea176",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
