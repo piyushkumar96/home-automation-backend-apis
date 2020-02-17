@@ -399,7 +399,7 @@ class DevicesController {
 
 			);
 
-			if (devLogs.logs.length == 0) {
+			if (!devLogs) {
 				return requestHandler.sendSuccess(res, `No logs found for device with Id ${devId}.`)();
 			}
 

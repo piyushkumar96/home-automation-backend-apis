@@ -209,3 +209,10 @@
 2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62831/api/v1/login details message: failed to login bad credentials
 2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62835/api/v1/user/me details message: Not Authorized to access this resource!
 2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62865/api/v1/deleteUser details message: Not Authorized to access this resource!
+2020-02-17 17:53:22 error: error ,Error during processing request: http://127.0.0.1:63083/api/v1/login details message: failed to login bad credentials
+2020-02-17 17:53:22 error: error ,Error during processing request: http://127.0.0.1:63087/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 17:53:22 error: error ,Error during processing request: http://127.0.0.1:63117/api/v1/deleteUser details message: Not Authorized to access this resource!
+2020-02-17 17:56:09 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceLogs/BULB2 details message: Cannot read property 'logs' of null
+2020-02-17 17:57:23 error: error ,Error during processing request: http://127.0.0.1:63158/api/v1/login details message: failed to login bad credentials
+2020-02-17 17:57:23 error: error ,Error during processing request: http://127.0.0.1:63162/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 17:57:24 error: error ,Error during processing request: http://127.0.0.1:63192/api/v1/deleteUser details message: Not Authorized to access this resource!
