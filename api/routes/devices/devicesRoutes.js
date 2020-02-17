@@ -13,6 +13,7 @@
 module.exports = function (app) {
 
    const bulbsController = require('../../controllers/devices/bulbsCntrl'),
+      fansController = require('../../controllers/devices/fansCntrl'),
       auth = require('../../utils/auth');
 
    // add the bulb to the network
@@ -20,31 +21,29 @@ module.exports = function (app) {
       .post(auth.isAuthunticated, bulbsController.addBulb)
 
    // Power On or Off to the bulb
-   app.route('/api/v1/powerOnOff')
-      .patch(auth.isAuthunticated, bulbsController.powerOnOff)
+   app.route('/api/v1/powerOnOffBulb')
+      .patch(auth.isAuthunticated, bulbsController.powerOnOffBulb)
 
    // Change color of bulb
-   app.route('/api/v1/changeColor')
-      .patch(auth.isAuthunticated, bulbsController.changeColor)
+   app.route('/api/v1/changeBulbColor')
+      .patch(auth.isAuthunticated, bulbsController.changeBulbColor)
 
    // increase or decrease the brightness of bulb
    app.route('/api/v1/setBrightness')
       .patch(auth.isAuthunticated, bulbsController.setBrightness)
 
-   // // get user profile
-   // app.route('/api/v1/user/me')
-   //    .get(auth.isAuthunticated, usersController.getProfile)
+   // add the fan to the network
+   app.route('/api/v1/addFan')
+      .post(auth.isAuthunticated, fansController.addFan)
 
-   // // update the user's profile
-   // app.route('/api/v1/updateUserProfile')
-   //    .patch(auth.isAuthunticated, usersController.updateUserProfile)
+   // Power On or Off to the fan
+   app.route('/api/v1/powerOnOffFan')
+      .patch(auth.isAuthunticated, fansController.powerOnOffFan)
 
-   // //update the user's password
-   // app.route('/api/v1/updateUserPassword')
-   //    .patch(auth.isAuthunticated, usersController.updateUserPassword)
+   // increase or decrease the speed of fan
+   app.route('/api/v1/setFanSpeed')
+      .patch(auth.isAuthunticated, fansController.setFanSpeed)
 
-   // //delete the user
-   // app.route('/api/v1/deleteUser')
-   //    .delete(auth.isAuthunticated, usersController.deleteUser)
+
 
 };
