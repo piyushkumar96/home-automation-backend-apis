@@ -1,2 +1,211 @@
 2020-02-17 10:29:50 error: error ,Error during processing request: http://localhost:4000/api/v1/addFan details message: please provide a vaid token ,your token might be expired
 2020-02-17 11:44:42 error: error ,Error during processing request: http://localhost:4000/api/v1/addAC details message: please provide a vaid token ,your token might be expired
+2020-02-17 13:01:26 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 13:02:57 error: error ,Error during processing request: http://localhost:4000/api/v1/getAllDeviceInNwk details message: please provide a vaid token ,your token might be expired
+2020-02-17 13:03:10 error: error ,Error during processing request: http://localhost:4000/api/v1/getAllDeviceInNwk details message: devType is not defined
+2020-02-17 13:20:58 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 14:09:31 error: error ,Error during processing request: http://localhost:4000/api/v1/getAllDevsSameType/bulb details message: please provide a vaid token ,your token might be expired
+2020-02-17 14:33:05 error: error ,Error during processing request: http://localhost:4000/api/v1/getAllDevsInRoom/1 details message: roomNum is not defined
+2020-02-17 14:33:18 error: error ,Error during processing request: http://localhost:4000/api/v1/getAllDevsInRoom/1 details message: Cannot read property 'devices' of undefined
+2020-02-17 14:57:52 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceLogs/BULB1 details message: devLogsUpdate.findOne is not a function
+2020-02-17 14:59:03 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceLogs/BULB1 details message: Parameter "filter" to findOne() must be an object, got [object Object],[object Object]
+2020-02-17 14:59:24 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceLogs/BULB1 details message: >1 field in obj: { _id: 0, logs: 1 }
+2020-02-17 14:59:42 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceLogs/BULB1 details message: Cannot read property 'length' of null
+2020-02-17 15:09:30 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:09:30 error: error ,Error during processing request: http://127.0.0.1:60570/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:19:05 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:19:05 error: error ,Error during processing request: http://127.0.0.1:60604/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:19:15 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:19:15 error: error ,Error during processing request: http://127.0.0.1:60619/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:20:00 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:20:00 error: error ,Error during processing request: http://127.0.0.1:60634/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:20:48 error: error ,Error during processing request: http://127.0.0.1:60648/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:20:55 error: error ,Error during processing request: http://127.0.0.1:60660/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:21:39 error: error ,Error during processing request: http://127.0.0.1:60675/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:21:51 error: error ,Error during processing request: http://127.0.0.1:60688/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:22:03 error: error ,Error during processing request: http://127.0.0.1:60700/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:22:32 error: error ,Error during processing request: http://127.0.0.1:60713/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:22:45 error: error ,Error during processing request: http://127.0.0.1:60728/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:23:03 error: error ,Error during processing request: http://127.0.0.1:60741/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:23:11 error: error ,Error during processing request: http://127.0.0.1:60754/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:23:33 error: error ,Error during processing request: http://127.0.0.1:60770/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:02 error: error ,Error during processing request: http://127.0.0.1:60780/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:20 error: error ,Error during processing request: http://127.0.0.1:60793/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:33 error: error ,Error during processing request: http://127.0.0.1:60806/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:40 error: error ,Error during processing request: http://127.0.0.1:60817/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:51 error: error ,Error during processing request: http://127.0.0.1:60828/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:24:56 error: error ,Error during processing request: http://127.0.0.1:60841/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:25:11 error: error ,Error during processing request: http://127.0.0.1:60854/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:25:35 error: error ,Error during processing request: http://127.0.0.1:60866/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:26:00 error: error ,Error during processing request: http://127.0.0.1:60879/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:26:19 error: error ,Error during processing request: http://127.0.0.1:60892/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:26:31 error: error ,Error during processing request: http://127.0.0.1:60906/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:26:31 error: error ,Error during processing request: http://127.0.0.1:60910/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:27:26 error: error ,Error during processing request: http://127.0.0.1:60924/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:27:26 error: error ,Error during processing request: http://127.0.0.1:60928/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:28:06 error: error ,Error during processing request: http://127.0.0.1:60942/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:28:06 error: error ,Error during processing request: http://127.0.0.1:60946/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:28:37 error: error ,Error during processing request: http://127.0.0.1:60960/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:28:37 error: error ,Error during processing request: http://127.0.0.1:60964/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:30:27 error: error ,Error during processing request: http://127.0.0.1:60983/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:30:27 error: error ,Error during processing request: http://127.0.0.1:60987/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:35:28 error: error ,Error during processing request: http://127.0.0.1:61010/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:35:28 error: error ,Error during processing request: http://127.0.0.1:61014/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:35:28 error: error ,Error during processing request: http://127.0.0.1:61016/api/v1/addBulb details message: Cannot read property 'bulb' of undefined
+2020-02-17 15:40:21 error: error ,Error during processing request: http://127.0.0.1:61040/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:40:21 error: error ,Error during processing request: http://127.0.0.1:61044/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:40:39 error: error ,Error during processing request: http://127.0.0.1:61055/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:40:39 error: error ,Error during processing request: http://127.0.0.1:61059/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:40:57 error: error ,Error during processing request: http://127.0.0.1:61072/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:40:57 error: error ,Error during processing request: http://127.0.0.1:61076/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:41:27 error: error ,Error during processing request: http://127.0.0.1:61088/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:41:27 error: error ,Error during processing request: http://127.0.0.1:61092/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:41:27 error: error ,Error during processing request: http://127.0.0.1:61094/api/v1/addBulb details message: E11000 duplicate key error collection: home_automation_backend_apis_test.devicelogs index: devId_1 dup key: { : "BULB1" }
+2020-02-17 15:42:18 error: error ,Error during processing request: http://127.0.0.1:61104/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:42:18 error: error ,Error during processing request: http://127.0.0.1:61108/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:42:18 error: error ,Error during processing request: http://127.0.0.1:61110/api/v1/addBulb details message: E11000 duplicate key error collection: home_automation_backend_apis_test.devicelogs index: devId_1 dup key: { : "BULB1" }
+2020-02-17 15:43:36 error: error ,Error during processing request: http://127.0.0.1:61126/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:43:37 error: error ,Error during processing request: http://127.0.0.1:61130/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:44:27 error: error ,Error during processing request: http://127.0.0.1:61145/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:44:27 error: error ,Error during processing request: http://127.0.0.1:61149/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:44:57 error: error ,Error during processing request: http://127.0.0.1:61162/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:44:57 error: error ,Error during processing request: http://127.0.0.1:61166/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:45:18 error: error ,Error during processing request: http://127.0.0.1:61178/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:45:18 error: error ,Error during processing request: http://127.0.0.1:61182/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:45:40 error: error ,Error during processing request: http://127.0.0.1:61195/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:45:40 error: error ,Error during processing request: http://127.0.0.1:61199/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:45:44 error: error ,Error during processing request: http://127.0.0.1:61210/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:45:44 error: error ,Error during processing request: http://127.0.0.1:61214/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:45:51 error: error ,Error during processing request: http://127.0.0.1:61227/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:45:51 error: error ,Error during processing request: http://127.0.0.1:61231/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:46:20 error: error ,Error during processing request: http://127.0.0.1:61242/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:46:20 error: error ,Error during processing request: http://127.0.0.1:61246/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:46:29 error: error ,Error during processing request: http://127.0.0.1:61258/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:46:29 error: error ,Error during processing request: http://127.0.0.1:61262/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:49:03 error: error ,Error during processing request: http://127.0.0.1:61280/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:49:03 error: error ,Error during processing request: http://127.0.0.1:61284/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:50:08 error: error ,Error during processing request: http://127.0.0.1:61302/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:50:08 error: error ,Error during processing request: http://127.0.0.1:61306/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:50:09 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:51:53 error: error ,Error during processing request: http://127.0.0.1:61331/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:51:53 error: error ,Error during processing request: http://127.0.0.1:61335/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:51:53 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:52:41 error: error ,Error during processing request: http://127.0.0.1:61355/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:52:41 error: error ,Error during processing request: http://127.0.0.1:61359/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:52:42 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:52:42 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:53:24 error: error ,Error during processing request: http://127.0.0.1:61380/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:53:24 error: error ,Error during processing request: http://127.0.0.1:61384/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:53:24 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 15:53:48 error: error ,Error during processing request: http://127.0.0.1:61396/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:53:48 error: error ,Error during processing request: http://127.0.0.1:61400/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:54:23 error: error ,Error during processing request: http://127.0.0.1:61415/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:54:23 error: error ,Error during processing request: http://127.0.0.1:61419/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:54:30 error: error ,Error during processing request: http://127.0.0.1:61432/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:54:31 error: error ,Error during processing request: http://127.0.0.1:61436/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:54:34 error: error ,Error during processing request: http://127.0.0.1:61450/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:54:34 error: error ,Error during processing request: http://127.0.0.1:61454/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:55:01 error: error ,Error during processing request: http://127.0.0.1:61467/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:55:01 error: error ,Error during processing request: http://127.0.0.1:61471/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:59:03 error: error ,Error during processing request: http://127.0.0.1:61501/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:59:03 error: error ,Error during processing request: http://127.0.0.1:61505/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 15:59:41 error: error ,Error during processing request: http://127.0.0.1:61516/api/v1/login details message: failed to login bad credentials
+2020-02-17 15:59:41 error: error ,Error during processing request: http://127.0.0.1:61520/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:06:58 error: error ,Error during processing request: http://127.0.0.1:61567/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:06:58 error: error ,Error during processing request: http://127.0.0.1:61569/api/v1/user/me details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-17 16:06:58 error: error ,Error during processing request: http://127.0.0.1:61571/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:06:58 error: error ,Error during processing request: http://127.0.0.1:61573/api/v1/addBulb details message: please provide a vaid token ,your token might be expired!!. Try by login again
+2020-02-17 16:07:41 error: error ,Error during processing request: http://127.0.0.1:61584/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:07:41 error: error ,Error during processing request: http://127.0.0.1:61588/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:07:41 error: error ,Error during processing request: http://127.0.0.1:61590/api/v1/addBulb details message: E11000 duplicate key error collection: home_automation_backend_apis_test.devicelogs index: devId_1 dup key: { : "BULB1" }
+2020-02-17 16:07:56 error: error ,Error during processing request: http://127.0.0.1:61601/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:07:56 error: error ,Error during processing request: http://127.0.0.1:61605/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:07:56 error: error ,Error during processing request: http://127.0.0.1:61607/api/v1/addBulb details message: E11000 duplicate key error collection: home_automation_backend_apis_test.devicelogs index: devId_1 dup key: { : "BULB1" }
+2020-02-17 16:08:56 error: error ,Error during processing request: http://127.0.0.1:61619/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:08:56 error: error ,Error during processing request: http://127.0.0.1:61623/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:09:01 error: error ,Error during processing request: http://127.0.0.1:61634/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:09:01 error: error ,Error during processing request: http://127.0.0.1:61638/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:09:17 error: error ,Error during processing request: http://127.0.0.1:61651/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:09:17 error: error ,Error during processing request: http://127.0.0.1:61655/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:10:02 error: error ,Error during processing request: http://127.0.0.1:61672/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:10:03 error: error ,Error during processing request: http://127.0.0.1:61676/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:10:03 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:10:38 error: error ,Error during processing request: http://127.0.0.1:61693/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:10:38 error: error ,Error during processing request: http://127.0.0.1:61697/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:10:38 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:10:47 error: error ,Error during processing request: http://127.0.0.1:61713/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:10:47 error: error ,Error during processing request: http://127.0.0.1:61717/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:10:47 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:10:47 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:10:52 error: error ,Error during processing request: http://127.0.0.1:61733/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:10:52 error: error ,Error during processing request: http://127.0.0.1:61737/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:10:52 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:11:35 error: error ,Error during processing request: http://127.0.0.1:61758/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:11:35 error: error ,Error during processing request: http://127.0.0.1:61762/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:11:35 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:12:48 error: error ,Error during processing request: http://127.0.0.1:61786/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:12:48 error: error ,Error during processing request: http://127.0.0.1:61790/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:14:33 error: error ,Error during processing request: http://127.0.0.1:61814/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:14:33 error: error ,Error during processing request: http://127.0.0.1:61818/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:15:05 error: error ,Error during processing request: http://127.0.0.1:61836/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:15:06 error: error ,Error during processing request: http://127.0.0.1:61840/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:15:32 error: error ,Error during processing request: http://127.0.0.1:61858/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:15:32 error: error ,Error during processing request: http://127.0.0.1:61862/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:20:13 error: error ,Error during processing request: http://127.0.0.1:61896/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:20:13 error: error ,Error during processing request: http://127.0.0.1:61900/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:21:35 error: error ,Error during processing request: http://127.0.0.1:61929/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:21:35 error: error ,Error during processing request: http://127.0.0.1:61933/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:21:36 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:22:26 error: error ,Error during processing request: http://127.0.0.1:61961/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:22:26 error: error ,Error during processing request: http://127.0.0.1:61965/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:22:37 error: error ,Error during processing request: http://localhost:4000/api/v1/getDeviceById/AC1 details message: please provide a vaid token ,your token might be expired
+2020-02-17 16:24:06 error: error ,Error during processing request: http://127.0.0.1:62008/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:24:06 error: error ,Error during processing request: http://127.0.0.1:62012/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:24:35 error: error ,Error during processing request: http://127.0.0.1:62039/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:24:35 error: error ,Error during processing request: http://127.0.0.1:62043/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:25:55 error: error ,Error during processing request: http://127.0.0.1:62071/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:25:55 error: error ,Error during processing request: http://127.0.0.1:62075/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:26:37 error: error ,Error during processing request: http://127.0.0.1:62104/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:26:37 error: error ,Error during processing request: http://127.0.0.1:62108/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:26:44 error: error ,Error during processing request: http://127.0.0.1:62136/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:26:44 error: error ,Error during processing request: http://127.0.0.1:62140/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:26:53 error: error ,Error during processing request: http://127.0.0.1:62167/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:26:54 error: error ,Error during processing request: http://127.0.0.1:62171/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:28:33 error: error ,Error during processing request: http://127.0.0.1:62206/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:28:33 error: error ,Error during processing request: http://127.0.0.1:62210/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:29:06 error: error ,Error during processing request: http://127.0.0.1:62242/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:29:07 error: error ,Error during processing request: http://127.0.0.1:62246/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:29:18 error: error ,Error during processing request: http://127.0.0.1:62277/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:29:18 error: error ,Error during processing request: http://127.0.0.1:62281/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:29:18 error: error ,Error during processing request: http://127.0.0.1:62301/api/v1/getDeviceLogs/BULB1 details message: Cannot read property 'logs' of null
+2020-02-17 16:30:53 error: error ,Error during processing request: http://127.0.0.1:62318/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:30:53 error: error ,Error during processing request: http://127.0.0.1:62322/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:30:54 error: error ,Error during processing request: http://127.0.0.1:62342/api/v1/getDeviceLogs/BULB1 details message: Cannot read property 'logs' of null
+2020-02-17 16:32:21 error: error ,Error during processing request: http://127.0.0.1:62363/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:32:21 error: error ,Error during processing request: http://127.0.0.1:62367/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:32:21 error: error ,Error during processing request: http://127.0.0.1:62387/api/v1/getDeviceLogs/BULB1 details message: Cannot read property 'logs' of null
+2020-02-17 16:32:26 error: error ,Error during processing request: http://127.0.0.1:62400/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:32:26 error: error ,Error during processing request: http://127.0.0.1:62404/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:33:22 error: error ,Error during processing request: http://127.0.0.1:62440/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:33:22 error: error ,Error during processing request: http://127.0.0.1:62444/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:38:43 error: error ,Error during processing request: http://127.0.0.1:62484/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:38:43 error: error ,Error during processing request: http://127.0.0.1:62488/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:40:27 error: error ,Error during processing request: http://127.0.0.1:62528/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:40:27 error: error ,Error during processing request: http://127.0.0.1:62532/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:41:10 error: error ,Error during processing request: http://127.0.0.1:62571/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:41:10 error: error ,Error during processing request: http://127.0.0.1:62575/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:41:14 error: error ,Error during processing request: http://127.0.0.1:62612/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:41:14 error: error ,Error during processing request: http://127.0.0.1:62616/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:41:17 error: error ,Error during processing request: http://127.0.0.1:62654/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:41:17 error: error ,Error during processing request: http://127.0.0.1:62658/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:41:21 error: error ,Error during processing request: http://127.0.0.1:62695/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:41:21 error: error ,Error during processing request: http://127.0.0.1:62699/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:41:25 error: error ,Error during processing request: http://127.0.0.1:62737/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:41:25 error: error ,Error during processing request: http://127.0.0.1:62741/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:42:25 error: error ,Error during processing request: http://127.0.0.1:62782/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:42:25 error: error ,Error during processing request: http://127.0.0.1:62786/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:42:26 error: error ,Error during processing request: http://127.0.0.1:62816/api/v1/deleteUser details message: Not Authorized to access this resource!
+2020-02-17 16:42:26 error: [Server]:  the url you are trying to reach is not hosted on our server
+2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62831/api/v1/login details message: failed to login bad credentials
+2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62835/api/v1/user/me details message: Not Authorized to access this resource!
+2020-02-17 16:42:51 error: error ,Error during processing request: http://127.0.0.1:62865/api/v1/deleteUser details message: Not Authorized to access this resource!
