@@ -132,5 +132,73 @@ class UsersController {
 			return requestHandler.sendError(req, res, err);
 		}
 	}
+
+	/**
+	 * get all  devices in the network
+	 *
+	 * @returns {Promise}
+	 */
+	static async getAllDevicesInNwk(req, res) {
+		try {
+
+			const userId = req.user.Id;
+
+			const devices = await userSchema.aggregate([
+				{
+					$unwind: "$devices"
+				},
+				{
+					$match: {
+						"devices.inNetwork": true,
+						"Id": userId
+					}
+				},
+				{
+					$group: {
+						_id: '$_id',
+						devices: { $push: '$devices' }
+					}
+				},
+				{
+					$project: {
+						_id: 0,
+						devices: 1
+					}
+				}
+
+
+			]);
+
+			if (!devices) {
+				return requestHandler.sendSuccess(res, `No devices are in the network yet`)();
+			}
+
+			return requestHandler.sendSuccess(res, `The devices which are in the network  @@@`)(devices);
+		} catch (err) {
+
+			return requestHandler.sendError(req, res, err);
+		}
+	}
+
+	/**
+	 * get all device 
+	 *
+	 * @returns {Promise}
+	 */
+	static async getAllDevices(req, res) {
+		try {
+
+			const devices = req.user.devices;
+
+			if (!devices) {
+				return requestHandler.sendSuccess(res, `No devices added yet @@@`)();
+			}
+
+			return requestHandler.sendSuccess(res, `Devices @@@`)(devices);
+		} catch (err) {
+
+			return requestHandler.sendError(req, res, err);
+		}
+	}
 }
 module.exports = UsersController;

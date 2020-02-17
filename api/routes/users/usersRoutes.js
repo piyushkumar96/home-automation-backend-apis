@@ -34,4 +34,12 @@ module.exports = function (app) {
    app.route('/api/v1/deleteUser')
       .delete(auth.isAuthunticated, usersController.deleteUser)
 
+   // get all devices which are in the network 
+   app.route('/api/v1/getAllDevicesInNwk')
+      .get(auth.isAuthunticated, usersController.getAllDevicesInNwk)
+
+   // get all devices 
+   app.route('/api/v1/getAllDevices')
+      .get(auth.isAuthunticated, usersController.getAllDevices)
+
 };
