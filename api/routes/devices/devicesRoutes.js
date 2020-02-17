@@ -14,6 +14,7 @@ module.exports = function (app) {
 
    const bulbsController = require('../../controllers/devices/bulbsCntrl'),
       fansController = require('../../controllers/devices/fansCntrl'),
+      ACsController = require('../../controllers/devices/acsCntrl'),
       auth = require('../../utils/auth');
 
    // add the bulb to the network
@@ -44,6 +45,17 @@ module.exports = function (app) {
    app.route('/api/v1/setFanSpeed')
       .patch(auth.isAuthunticated, fansController.setFanSpeed)
 
+   // add the AC to the network
+   app.route('/api/v1/addAC')
+      .post(auth.isAuthunticated, ACsController.addAC)
+
+   // Power On or Off to the AC
+   app.route('/api/v1/powerOnOffAC')
+      .patch(auth.isAuthunticated, ACsController.powerOnOffAC)
+
+   // increase or decrease the temperature of AC
+   app.route('/api/v1/setACTemperature')
+      .patch(auth.isAuthunticated, ACsController.setACTemperature)
 
 
 };

@@ -1,0 +1,79 @@
+2020-02-17 10:12:26 info: [Server]:  api server started on: 4000
+2020-02-17 10:12:26 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:12:40 info: [Server]:  api server started on: 4000
+2020-02-17 10:12:40 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:12:55 info: [Server]:  api server started on: 4000
+2020-02-17 10:12:55 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:18:13 info: [Server]:  api server started on: 4000
+2020-02-17 10:18:13 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:18:31 info: [Server]:  api server started on: 4000
+2020-02-17 10:18:31 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:18:59 info: [Server]:  api server started on: 4000
+2020-02-17 10:18:59 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:19:06 info: [Server]:  api server started on: 4000
+2020-02-17 10:19:06 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:19:25 info: [Server]:  api server started on: 4000
+2020-02-17 10:19:25 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:20:11 info: [Server]:  api server started on: 4000
+2020-02-17 10:20:11 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:20:51 info: [Server]:  api server started on: 4000
+2020-02-17 10:20:51 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:20:59 info: [Server]:  api server started on: 4000
+2020-02-17 10:20:59 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:22:17 info: [Server]:  api server started on: 4000
+2020-02-17 10:22:17 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:24:31 info: [Server]:  api server started on: 4000
+2020-02-17 10:24:31 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:25:07 info: [Server]:  api server started on: 4000
+2020-02-17 10:25:07 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:27:31 info: [Server]:  api server started on: 4000
+2020-02-17 10:27:31 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:29:50 error: error ,Error during processing request: http://localhost:4000/api/v1/addFan details message: please provide a vaid token ,your token might be expired
+2020-02-17 10:29:57 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 10:29:57 GMT+0530 (India Standard Time)
+2020-02-17 10:30:04 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 10:30:04 GMT+0530 (India Standard Time)
+2020-02-17 10:30:08 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 10:30:08 GMT+0530 (India Standard Time)
+2020-02-17 10:31:53 info: [Server]:  api server started on: 4000
+2020-02-17 10:31:53 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:32:59 info: [Server]:  api server started on: 4000
+2020-02-17 10:32:59 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:33:17 info: [Server]:  api server started on: 4000
+2020-02-17 10:33:17 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:35:37 info: [Server]:  api server started on: 4000
+2020-02-17 10:35:37 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:36:03 info: [Server]:  api server started on: 4000
+2020-02-17 10:36:03 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 10:36:14 info: [Server]:  api server started on: 4000
+2020-02-17 10:36:14 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:25:57 info: [Server]:  api server started on: 4000
+2020-02-17 11:25:57 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:30:42 info: [Server]:  api server started on: 4000
+2020-02-17 11:30:43 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:34:51 info: [Server]:  api server started on: 4000
+2020-02-17 11:34:51 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:36:22 info: [Server]:  api server started on: 4000
+2020-02-17 11:36:22 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:39:49 info: [Server]:  api server started on: 4000
+2020-02-17 11:39:49 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:40:10 info: [Server]:  api server started on: 4000
+2020-02-17 11:40:10 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:40:14 info: [Server]:  api server started on: 4000
+2020-02-17 11:40:14 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:40:15 info: [Server]:  api server started on: 4000
+2020-02-17 11:40:15 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:40:42 info: [Server]:  api server started on: 4000
+2020-02-17 11:40:42 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:42:21 info: [Server]:  api server started on: 4000
+2020-02-17 11:42:21 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:42:35 info: [Server]:  api server started on: 4000
+2020-02-17 11:42:35 info: [Server]:  Connection with MongoDB installed 
+2020-02-17 11:44:42 error: error ,Error during processing request: http://localhost:4000/api/v1/addAC details message: please provide a vaid token ,your token might be expired
+2020-02-17 11:44:48 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:44:48 GMT+0530 (India Standard Time)
+2020-02-17 11:44:57 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:44:57 GMT+0530 (India Standard Time)
+2020-02-17 11:45:01 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:45:01 GMT+0530 (India Standard Time)
+2020-02-17 11:47:22 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:47:22 GMT+0530 (India Standard Time)
+2020-02-17 11:47:27 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:47:27 GMT+0530 (India Standard Time)
+2020-02-17 11:47:53 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:47:53 GMT+0530 (India Standard Time)
+2020-02-17 11:49:03 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:49:03 GMT+0530 (India Standard Time)
+2020-02-17 11:50:14 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:50:14 GMT+0530 (India Standard Time)
+2020-02-17 11:50:20 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:50:20 GMT+0530 (India Standard Time)
+2020-02-17 11:50:25 info: a request has been made and proccessed successfully at: Mon Feb 17 2020 11:50:25 GMT+0530 (India Standard Time)
