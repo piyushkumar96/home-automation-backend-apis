@@ -46,10 +46,10 @@ This repository  explains the business requirements of home-automation using dev
 5. Then Use APIs to use application. 
 
 -------------------------------------------------------------------------------------------------------------------------
-														             Solution Approach
+					Solution Approach
 -------------------------------------------------------------------------------------------------------------------------
 
-##Description
+# Description
 
 There are **two schemas** one for the **user** and others for storing the **logs** of devices. And **devices are stored into the user's profile**. Whenever there are any changes made to devices, the logs will be stored in the database. There is a **virtual network in which all the devices are connected to it**. When you add any devices it is added to this network. Now you can manage and change the properties of the device like brightness, color, speed, temperature. And even you **can remove the device from this network(I have maintained a boolean flag named "InNetwork"** in DB, So if it is true then its in-network right now otherwise not.
 
@@ -57,7 +57,7 @@ There are **two schemas** one for the **user** and others for storing the **logs
 
 -------------------------------------------------------------------------------------------------------------------------
 
-#Steps to test the project:- 
+**Steps to test the project:-**
 
 1. Register the user.
 
@@ -75,7 +75,7 @@ There are **two schemas** one for the **user** and others for storing the **logs
 
 -------------------------------------------------------------------------------------------------------------------------
 
-#Features Provided:- 
+**Features Provided:-**
 
 1. **User**
 
@@ -124,6 +124,5 @@ There are **two schemas** one for the **user** and others for storing the **logs
 	k) get logs of the devices
 
 -------------------------------------------------------------------------------------------------------------------------
-												END
-
+						END
 -------------------------------------------------------------------------------------------------------------------------
