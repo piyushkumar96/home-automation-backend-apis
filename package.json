@@ -28,7 +28,7 @@
     "mongoose": "^5.9.1",
     "sendgrid": "^5.2.3",
     "uuid": "^3.4.0",
-    "validator": "^11.1.0",
+    "validator": "^13.7.0",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.2"
   },
